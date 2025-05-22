@@ -1,0 +1,4 @@
+# ninja log v5
+17	8170	7696065003005188	D:/Viskom Final Project/ops_dcnv3/build/temp.win-amd64-3.8/Release/Viskom Final Project/ops_dcnv3/src/cpu/dcnv3_cpu.obj	30c9414a51ca9b4f
+28	17309	7696065094325765	D:/Viskom Final Project/ops_dcnv3/build/temp.win-amd64-3.8/Release/Viskom Final Project/ops_dcnv3/src/vision.obj	3c90265156081be7
+23	54631	7696065467161150	D:/Viskom Final Project/ops_dcnv3/build/temp.win-amd64-3.8/Release/Viskom Final Project/ops_dcnv3/src/cuda/dcnv3_cuda.obj	5730f22613411df9
