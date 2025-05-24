@@ -210,7 +210,7 @@ test_evaluator = dict(
     proposal_nums=(100, 1, 10))
 
 # training settings
-max_epochs = 300
+max_epochs = 150
 stage2_num_epochs = 20
 base_lr = 0.001
 interval = 10
