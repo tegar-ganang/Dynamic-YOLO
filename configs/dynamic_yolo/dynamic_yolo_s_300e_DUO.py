@@ -151,7 +151,7 @@ test_pipeline = [
 
 
 train_dataloader = dict(
-    batch_size=48,
+    batch_size=32,
     num_workers=20,
     batch_sampler=None,
     pin_memory=True,
@@ -273,7 +273,7 @@ custom_hooks = [
     )
 ]
 
-auto_scale_lr = dict(enable=False, base_batch_size=16)
+auto_scale_lr = dict(enable=False, base_batch_size=32)
 
 vis_backends = [dict(type='LocalVisBackend'), dict(type='WandbVisBackend',  init_kwargs=dict(magic=True, project="Dynamic-YOLO-DUO"))] 
 visualizer = dict(
