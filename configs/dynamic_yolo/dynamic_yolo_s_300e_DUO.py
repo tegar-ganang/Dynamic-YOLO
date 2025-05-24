@@ -85,7 +85,7 @@ model = dict(
     )
 
 # dataset settings
-data_root = "/kaggle/working/data/DUO"
+data_root = "/kaggle/working/data/DUO/"
 dataset_type = "CocoDataset"
 
 classes = ('holothurian', 'echinus', 'scallop', 'starfish')
