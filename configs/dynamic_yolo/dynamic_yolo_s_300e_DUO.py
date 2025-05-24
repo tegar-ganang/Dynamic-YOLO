@@ -151,8 +151,8 @@ test_pipeline = [
 
 
 train_dataloader = dict(
-    batch_size=32,
-    num_workers=10,
+    batch_size=48,
+    num_workers=20,
     batch_sampler=None,
     pin_memory=True,
     dataset=dict(type=dataset_type,
@@ -167,7 +167,7 @@ train_dataloader = dict(
 
 val_dataloader = dict(
     batch_size=20,
-    num_workers=10,
+    num_workers=20,
     persistent_workers=True,
     drop_last=False,
     sampler=dict(type='DefaultSampler', shuffle=False),
@@ -181,8 +181,8 @@ val_dataloader = dict(
         pipeline=test_pipeline))
 
 test_dataloader = dict(
-    batch_size=4,
-    num_workers=2,
+    batch_size=6,
+    num_workers=4,
     persistent_workers=True,
     drop_last=False,
     sampler=dict(type='DefaultSampler', shuffle=False),
