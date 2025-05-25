@@ -20,8 +20,10 @@ model = dict(
         batch_augments=None),
     backbone=dict(
         type='LightInternImage', 
-        channels=128,
-        depths=[8, 8, 4], 
+        channels=64,      # dari 128 → 64
+        depths=[4, 4, 2], # dari [8, 8, 4]
+        # channels=128,
+        # depths=[8, 8, 4], 
         groups=[4, 8, 16],
         mlp_ratios=[1.0, 1.0, 1.0],
         drop_rate=0.1,
@@ -152,7 +154,7 @@ test_pipeline = [
 
 train_dataloader = dict(
     batch_size=32,
-    num_workers=20,
+    num_workers=4,
     batch_sampler=None,
     pin_memory=True,
     dataset=dict(type=dataset_type,
@@ -167,7 +169,7 @@ train_dataloader = dict(
 
 val_dataloader = dict(
     batch_size=20,
-    num_workers=20,
+    num_workers=4,
     persistent_workers=True,
     drop_last=False,
     sampler=dict(type='DefaultSampler', shuffle=False),
